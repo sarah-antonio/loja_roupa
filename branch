@@ -1,0 +1,28 @@
+# Função para menu principal
+def menu():
+    while True:
+        print("1. Cadastrar Cliente")
+        print("2. Cadastrar Produto")
+        print("3. Exibir Clientes")
+        print("4. Exibir Produtos")
+        print("5. Sair")
+        
+        opcao = input("Escolha uma opção: ")
+        
+        if opcao == '1':
+            cadastrar_cliente()
+        elif opcao == '2':
+            cadastrar_produto()
+        elif opcao == '3':
+            exibir_clientes()
+        elif opcao == '4':
+            exibir_produtos()
+        elif opcao == '5':
+            print("Saindo...")
+            break
+        else:
+            print("Opção inválida! Tente novamente.\n")
+
+# Executando o menu principal
+if __name__ == "__main__":
+    menu()
