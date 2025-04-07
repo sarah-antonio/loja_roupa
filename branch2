@@ -1,0 +1,13 @@
+# Função para gerar a tabuada de um número
+def tabuada():
+    # Solicita o número ao usuário
+    numero = int(input("Digite um número para ver sua tabuada: "))
+    
+    # Exibe a tabuada do número de 1 a 10
+    print(f"\nTabuada do {numero}:")
+    for i in range(1, 11):
+        print(f"{numero} x {i} = {numero * i}")
+
+# Chama a função para gerar a tabuada
+if __name__ == "__main__":
+    tabuada()
